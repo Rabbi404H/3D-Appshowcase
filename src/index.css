@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }  /* শুধু অর্ধেক সরাচ্ছি, কারণ দুইটা <p> আছে */
+}
+
+.animate-scroll {
+  animation: scroll 15s linear infinite;
+    will-change: transform;
+
+}
